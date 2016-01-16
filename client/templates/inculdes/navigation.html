@@ -1,0 +1,24 @@
+<template name="navigationRight">
+   <ul class="nav navbar-nav navbar-right">
+      {{> loginButtons align="right"}}
+   </ul>
+</template>
+
+<template name="navigationLeft">
+   <ul class="nav navbar-nav navbar-left">
+      <li><a href="{{pathFor 'home'}}">Home</a></li>
+      <li class="hidden"><a href="#page-top"></a></li>
+      <li><a href="{{pathFor 'teamsList'}}">Teams</a></li>
+      <li><a href="{{pathFor 'playersList'}}">Players</a></li>
+   </ul>
+</template>
+
+<template name="navigationFooter">
+   <ul class="nav navbar-nav navbar-footer">
+      <li><a href="{{pathFor 'home'}}">Home</a></li>
+      <li class="hidden"><a href="#page-top"></a></li>
+      <li><a href="{{pathFor 'teamsList'}}">Teams</a></li>
+      <li><a href="{{pathFor 'playersList'}}">Players</a></li>
+      {{> loginButtons align="right"}}
+   </ul>
+</template>
