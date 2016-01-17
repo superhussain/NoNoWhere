@@ -1,4 +1,33 @@
 section#about
   padding: 1em 0 4em
+  h1, h3
+    text-align: center
+  h1
+    margin: 0.3em 0
+    background-color: transparent
+    position: relative
+    display: inline-block
+    left: 50%
+    transform: translate(-50%)
+    &:before
+      content: ""
+      height: 5px
+      background-color: $orange
+      position: absolute
+      width: 90%
+      top: 40%
+      left: -100%
+    &:after
+      content: ""
+      height: 5px
+      background-color: $orange
+      position: absolute
+      width: 90%
+      top: 40%
+      left: 110%
+  h3
+    font-weight: 300
+    letter-spacing: 15px
+    text-transform: uppercase
   p
     text-align: justify
