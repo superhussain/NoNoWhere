@@ -489,11 +489,11 @@ a:hover, a:focus {
 
 /* line 81, C:/dev/deltahacks/sass/1-base/_body.sass */
 ::selection {
-  background: #fbbf69; }
+  background: #fdd49a; }
 
 /* line 84, C:/dev/deltahacks/sass/1-base/_body.sass */
 ::-moz-selection {
-  background: #fbbf69; }
+  background: #fdd49a; }
 
 /* line 87, C:/dev/deltahacks/sass/1-base/_body.sass */
 img::selection {
@@ -679,6 +679,14 @@ aside {
 /* line 2, C:/dev/deltahacks/sass/3-sections/_about.sass */
 section#about p {
   text-align: justify; }
+
+/* line 2, C:/dev/deltahacks/sass/3-sections/_works.sass */
+section#works .event-card {
+  text-align: center; }
+  /* line 4, C:/dev/deltahacks/sass/3-sections/_works.sass */
+  section#works .event-card img {
+    width: 100%;
+    max-width: 700px; }
 
 /* line 1, C:/dev/deltahacks/sass/3-sections/_footer.sass */
 footer {
