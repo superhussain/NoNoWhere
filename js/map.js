@@ -92,7 +92,7 @@ function handleNoGeolocation(errorFlag) {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-$(document).ready(function () {
+setTimeout(function () {
   var marker, match, longtitude, latitude;
 
   for (var x = 0; x < json.length; x++) {
@@ -103,22 +103,26 @@ $(document).ready(function () {
         position: latlng,
         map: map
       });
+      marker.addListener("click", function (e) {
+        latitude = this.position.lat();
+        longitude = this.position.lng();
+        console.log(latitude + ", " + longitude);
+        for (var i = 0; i < json.length; i++) {
+          if (json[i].lat == latitude && json[i].long == longitude) {
+            match = json[i];
+          }
+          console.log(match);
+        }
+      });
     });
   };
-
-  setTimeout(function () {
-    marker.addListener("click", function (e) {
-      latitude = this.position.lat();
-      longitude = this.position.lng();
-      console.log(latitude + ", " + longitude);
-      update();
-    });
-  }, 1000);
+}, 2000);
 
 
 
 
-});
+
+
 
 var update = function () {
   for (var i = 0; i < json.length; i++) {
