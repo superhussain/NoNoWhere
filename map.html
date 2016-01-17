@@ -17,9 +17,19 @@
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
 </head>
 
-<body onload="initialize()">
-
+<body class="map" onload="initialize()">
+  <div class="head">
+    <h1>Click on a marker below.</h1>
+    <div class="info">
+      <h3 class="loc"></h3>
+      <h3 class="date"></h3>
+    </div>
+  </div>
   <div id="map"></div>
+  <div class="details">
+    <h1></h1>
+    <p class="desc"></p>
+  </div>
 
   <script src="js/map.js"></script>
 </body>

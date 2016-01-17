@@ -740,8 +740,38 @@ footer {
       color: #fbb450; }
 
 /* line 1, C:/dev/deltahacks/sass/3-sections/_map.sass */
-#map {
-  width: 100%;
-  height: 100vh; }
+.map {
+  background-color: white; }
+  /* line 3, C:/dev/deltahacks/sass/3-sections/_map.sass */
+  .map .head {
+    background-color: #f64747;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    /* line 8, C:/dev/deltahacks/sass/3-sections/_map.sass */
+    .map .head h1 {
+      color: white; }
+    /* line 10, C:/dev/deltahacks/sass/3-sections/_map.sass */
+    .map .head .info {
+      text-align: right; }
+      /* line 12, C:/dev/deltahacks/sass/3-sections/_map.sass */
+      .map .head .info h3 {
+        color: white;
+        margin: 0.3em; }
+  /* line 15, C:/dev/deltahacks/sass/3-sections/_map.sass */
+  .map #map {
+    width: 100%;
+    height: 250px; }
+  /* line 18, C:/dev/deltahacks/sass/3-sections/_map.sass */
+  .map .details {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 5em; }
+    /* line 22, C:/dev/deltahacks/sass/3-sections/_map.sass */
+    .map .details h1 {
+      color: #f64747; }
+    /* line 24, C:/dev/deltahacks/sass/3-sections/_map.sass */
+    .map .details p {
+      text-align: justify; }
 
 /*# sourceMappingURL=main.css.map */
