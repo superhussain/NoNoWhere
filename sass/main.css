@@ -625,7 +625,7 @@ aside {
       font-size: 1.5em;
       font-style: normal;
       text-align: right;
-      letter-spacing: 5px; }
+      letter-spacing: 10px; }
     /* line 23, C:/dev/deltahacks/sass/2-modules/_aside.sass */
     aside .quote .lower {
       font-weight: 400;
