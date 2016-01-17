@@ -565,7 +565,7 @@ section {
 .hero-unit {
   min-height: 100vh;
   height: 580px;
-  background-image: url(../img/bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/bg.jpg);
   background-size: cover; }
   /* line 6, C:/dev/deltahacks/sass/3-sections/_hero.sass */
   .hero-unit nav {
@@ -628,5 +628,21 @@ section {
 /* line 2, C:/dev/deltahacks/sass/3-sections/_about.sass */
 section#about p {
   text-align: justify; }
+
+/* line 1, C:/dev/deltahacks/sass/3-sections/_footer.sass */
+footer {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg.jpg);
+  background-size: cover;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 4px;
+  padding: 3em; }
+  /* line 9, C:/dev/deltahacks/sass/3-sections/_footer.sass */
+  footer a {
+    color: #F89406; }
+    /* line 11, C:/dev/deltahacks/sass/3-sections/_footer.sass */
+    footer a:hover {
+      color: #fbb450; }
 
 /*# sourceMappingURL=main.css.map */
