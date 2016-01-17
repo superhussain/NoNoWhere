@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100);
-@import url(https://fonts.googleapis.com/css?family=Kalam:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -401,7 +401,7 @@ th {
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: #e27f2e;
-  font-family: "Kalam";
+  font-family: "Roboto Slab";
   font-weight: bold; }
 
 /* line 9, C:/dev/deltahacks/sass/1-base/_body.sass */
@@ -514,23 +514,17 @@ body {
 
 /* line 104, C:/dev/deltahacks/sass/1-base/_body.sass */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: #fff; }
 
-/* line 108, C:/dev/deltahacks/sass/1-base/_body.sass */
-section {
-  max-width: 1100px;
-  width: 100%;
-  margin: 0 auto; }
-
-/* line 115, C:/dev/deltahacks/sass/1-base/_body.sass */
+/* line 110, C:/dev/deltahacks/sass/1-base/_body.sass */
 .flex-video {
   height: 0;
   overflow: hidden;
   padding-bottom: 27.5%;
   position: relative; }
 
-/* line 124, C:/dev/deltahacks/sass/1-base/_body.sass */
+/* line 119, C:/dev/deltahacks/sass/1-base/_body.sass */
 .flex-video iframe,
 .flex-video object,
 .flex-video embed,
@@ -540,7 +534,7 @@ section {
   top: 0;
   left: 0; }
 
-/* line 133, C:/dev/deltahacks/sass/1-base/_body.sass */
+/* line 128, C:/dev/deltahacks/sass/1-base/_body.sass */
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -549,92 +543,16 @@ section {
   clear: both;
   height: 0; }
 
-/* line 140, C:/dev/deltahacks/sass/1-base/_body.sass */
+/* line 135, C:/dev/deltahacks/sass/1-base/_body.sass */
 .clearfix {
   display: inline-block; }
 
-/* line 142, C:/dev/deltahacks/sass/1-base/_body.sass */
+/* line 137, C:/dev/deltahacks/sass/1-base/_body.sass */
 * html .clearfix {
   height: 1%; }
 
-/* line 144, C:/dev/deltahacks/sass/1-base/_body.sass */
+/* line 139, C:/dev/deltahacks/sass/1-base/_body.sass */
 .clearfix {
   display: block; }
-
-/* line 149, C:/dev/deltahacks/sass/1-base/_body.sass */
-.button-light {
-  padding: 0.5em 1em;
-  color: #5c5b59;
-  background-color: #e4e0d4;
-  box-shadow: 0px 5px 0px #e27f2e;
-  transition: all 300ms cubic-bezier(0.42, 0, 0.21, 2.01); }
-  /* line 155, C:/dev/deltahacks/sass/1-base/_body.sass */
-  .button-light:hover {
-    color: #e27f2e;
-    box-shadow: none; }
-
-/* line 160, C:/dev/deltahacks/sass/1-base/_body.sass */
-.light {
-  background: #e4e0d4 url(../img/sep-dark.png);
-    background-position: bottom left;
-    background-repeat: repeat-x;
-  padding: 50px;
-  padding-bottom: 163px; }
-  /* line 166, C:/dev/deltahacks/sass/1-base/_body.sass */
-  .light section {
-    color: #5c5b59; }
-
-/* line 169, C:/dev/deltahacks/sass/1-base/_body.sass */
-.dark {
-  background: #5c5b59 url(../img/sep-light.png);
-    background-position: bottom right;
-    background-repeat: repeat-x;
-  padding: 50px;
-  padding-bottom: 163px; }
-  /* line 175, C:/dev/deltahacks/sass/1-base/_body.sass */
-  .dark section {
-    color: #e4e0d4; }
-
-@media (max-width: 600px) {
-  /* line 178, C:/dev/deltahacks/sass/1-base/_body.sass */
-  .dark, .light {
-    padding: 1.5em;
-    padding-bottom: 163px; } }
-
-/* line 184, C:/dev/deltahacks/sass/1-base/_body.sass */
-#back-to-top {
-  display: none;
-  width: 70px;
-  height: 50px;
-  margin: 0;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 99;
-  background: #424140;
-  box-shadow: 0px -10px 0px #e27f2e;
-  transition: all 300ms cubic-bezier(0.42, 0, 0.21, 2.01); }
-
-/* line 197, C:/dev/deltahacks/sass/1-base/_body.sass */
-#back-to-top i {
-  margin: 0;
-  position: absolute;
-  left: calc(50% - 16px);
-  color: #e4e0d4;
-  font-size: 32px;
-  line-height: 50px;
-  opacity: 0.3;
-  transition: all 300ms cubic-bezier(0.42, 0, 0.21, 2.01); }
-
-/* line 207, C:/dev/deltahacks/sass/1-base/_body.sass */
-#back-to-top:hover {
-  height: 60px;
-  box-shadow: 0px -10px 0px #45629c; }
-
-/* line 211, C:/dev/deltahacks/sass/1-base/_body.sass */
-#back-to-top:hover i {
-  line-height: 60px;
-  color: #e27f2e;
-  opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
