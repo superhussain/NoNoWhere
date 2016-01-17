@@ -10,7 +10,10 @@
   "1-base/body";
 
 // 2-modules
+@import
+  "2-modules/section";
 
 // 3-sections
 @import
-  "3-sections/hero";
+  "3-sections/hero",
+  "3-sections/about";

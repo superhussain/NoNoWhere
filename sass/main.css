@@ -489,11 +489,11 @@ a:hover, a:focus {
 
 /* line 81, C:/dev/deltahacks/sass/1-base/_body.sass */
 ::selection {
-  background: #F89406; }
+  background: #fbbf69; }
 
 /* line 84, C:/dev/deltahacks/sass/1-base/_body.sass */
 ::-moz-selection {
-  background: #F89406; }
+  background: #fbbf69; }
 
 /* line 87, C:/dev/deltahacks/sass/1-base/_body.sass */
 img::selection {
@@ -515,7 +515,7 @@ body {
 /* line 104, C:/dev/deltahacks/sass/1-base/_body.sass */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #fff; }
+  background-color: #fef8e8; }
 
 /* line 110, C:/dev/deltahacks/sass/1-base/_body.sass */
 .flex-video {
@@ -555,12 +555,19 @@ body {
 .clearfix {
   display: block; }
 
+/* line 1, C:/dev/deltahacks/sass/2-modules/_section.sass */
+section {
+  width: 100%;
+  max-width: 900px;
+  margin: 2em auto; }
+
 /* line 1, C:/dev/deltahacks/sass/3-sections/_hero.sass */
 .hero-unit {
   min-height: 100vh;
+  height: 580px;
   background-image: url(../img/bg.jpg);
   background-size: cover; }
-  /* line 5, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+  /* line 6, C:/dev/deltahacks/sass/3-sections/_hero.sass */
   .hero-unit nav {
     width: 100%;
     max-width: 900px;
@@ -569,42 +576,42 @@ body {
     align-items: center;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 2em 3em;
+    padding: 1em 3em;
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.3);
     border-radius: 0px 0px 10px 10px; }
-    /* line 16, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+    /* line 17, C:/dev/deltahacks/sass/3-sections/_hero.sass */
     .hero-unit nav img {
       width: 40%; }
-    /* line 18, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+    /* line 19, C:/dev/deltahacks/sass/3-sections/_hero.sass */
     .hero-unit nav ul {
       display: flex;
       list-style: none; }
-      /* line 21, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+      /* line 22, C:/dev/deltahacks/sass/3-sections/_hero.sass */
       .hero-unit nav ul li {
         margin: 0 1em; }
-        /* line 23, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+        /* line 24, C:/dev/deltahacks/sass/3-sections/_hero.sass */
         .hero-unit nav ul li a {
           color: black;
           transition: all 150ms ease-in-out; }
-          /* line 26, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+          /* line 27, C:/dev/deltahacks/sass/3-sections/_hero.sass */
           .hero-unit nav ul li a:hover {
             color: #555; }
-  /* line 28, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+  /* line 29, C:/dev/deltahacks/sass/3-sections/_hero.sass */
   .hero-unit .hero-lead {
     width: 100%;
     max-width: 900px;
-    margin: 2em auto;
+    margin: 2em auto 0;
     text-align: center;
     position: relative;
     bottom: 0; }
-    /* line 35, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+    /* line 36, C:/dev/deltahacks/sass/3-sections/_hero.sass */
     .hero-unit .hero-lead h1, .hero-unit .hero-lead h2 {
       color: white;
       text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3); }
-    /* line 38, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+    /* line 39, C:/dev/deltahacks/sass/3-sections/_hero.sass */
     .hero-unit .hero-lead h2 {
       margin-bottom: 2em; }
-    /* line 40, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+    /* line 41, C:/dev/deltahacks/sass/3-sections/_hero.sass */
     .hero-unit .hero-lead .button {
       background: white;
       padding: 1em 2em;
@@ -612,10 +619,14 @@ body {
       font-weight: 900;
       transition: all 300ms cubic-bezier(0.51, 0.18, 0.24, 1.99);
       border-radius: 5px; }
-      /* line 47, C:/dev/deltahacks/sass/3-sections/_hero.sass */
+      /* line 48, C:/dev/deltahacks/sass/3-sections/_hero.sass */
       .hero-unit .hero-lead .button:hover {
         border-bottom: 0;
         background-color: #F89406;
         color: white; }
+
+/* line 2, C:/dev/deltahacks/sass/3-sections/_about.sass */
+section#about p {
+  text-align: justify; }
 
 /*# sourceMappingURL=main.css.map */
