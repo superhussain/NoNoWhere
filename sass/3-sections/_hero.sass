@@ -21,11 +21,17 @@
       list-style: none
       li
         margin: 0 1em
+        border-bottom: 3px solid transparent
+        transition: all 300ms ease-in-out
         a
           color: black
+          text-transform: uppercase
+          letter-spacing: 2px
           transition: all 150ms ease-in-out
-          &:hover
-            color: #555
+        &:hover
+          border-bottom: 3px solid $dark-gray
+          a
+            color: $dark-gray
   .hero-lead
     width: 100%
     max-width: 900px
