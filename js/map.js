@@ -93,32 +93,45 @@ function handleNoGeolocation(errorFlag) {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 $(document).ready(function () {
+  var marker, match, longtitude, latitude;
+
   for (var x = 0; x < json.length; x++) {
     $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=' + json[x].location + '&sensor=false', null, function (data) {
       var p = data.results[0].geometry.location
       var latlng = new google.maps.LatLng(p.lat, p.lng);
-      var marker = new google.maps.Marker({
+      marker = new google.maps.Marker({
         position: latlng,
         map: map
       });
-      google.maps.event.addListener(marker, "click", function (event) {
-        var latitude = this.position.lat();
-        var longitude = this.position.lng();
-        console.log(this);
-
-        var match;
-        for (var i = 0; i < json.length; i++) {
-          if (json[i].lat == latitude && json[i].long == longitude)
-            match = json[i];
-        }
-
-        $('.map .head h1').text(match.title);
-        $('.map .head .loc').text(match.location);
-        $('.map .head .date').text(match.date);
-
-        $('.map .details h1').text("Details.");
-        $('.map .details .desc').text(match.desc);
-      });
-    })
+    });
   };
+
+  setTimeout(function () {
+    marker.addListener("click", function (e) {
+      latitude = this.position.lat();
+      longitude = this.position.lng();
+      console.log(latitude + ", " + longitude);
+      update();
+    });
+  }, 1000);
+
+
+
+
 });
+
+var update = function () {
+  for (var i = 0; i < json.length; i++) {
+    if (json[i].lat == latitude && json[i].long == longitude) {
+      match = json[i];
+    }
+    console.log(match);
+  }
+
+  $('.map .head h1').text(match.title);
+  $('.map .head .loc').text(match.location);
+  $('.map .head .date').text(match.date);
+
+  $('.map .details h1').text("Details.");
+  $('.map .details .desc').text(match.desc);
+}
