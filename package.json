@@ -1,0 +1,18 @@
+{
+  "name": "deltahacks",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-ruby-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.1",
+    "gulp-webserver": "^0.9.1"
+  },
+  "author": "Hussain Abbas",
+  "license": "MIT"
+}
