@@ -4,8 +4,8 @@ var json = [
   {
     "id": 1,
     "title": "Resume/Cover Letter Workshop",
-    "long": "43.341118",
-    "lat": "-79.883503",
+    "long": "43.3408447",
+    "lat": "-79.8834387",
     "location": "427 Dundas Street East, Unit 1 Waterdown, ON L0R 2H1",
     "date": "10/16/2014",
     "time": "11:40 AM",
@@ -14,8 +14,8 @@ var json = [
   {
     "id": 2,
     "title": "Interview Skills Workshop",
-    "long": "43.341118",
-    "lat": "-79.883503",
+    "long": "43.2576357",
+    "lat": "-79.84534329999997",
     "location": "427 Dundas Street East, Unit 1 Waterdown, ON",
     "date": "12/10/2014",
     "time": "11:50 AM",
@@ -24,8 +24,8 @@ var json = [
   {
     "id": 3,
     "title": "Talk with someone about substance use",
-    "long": "43.257862",
-    "lat": "-79.845322",
+    "long": "43.2593878",
+    "lat": "-79.87384880000002",
     "location": "196 Wentworth St N, Hamilton, ON",
     "date": "Monday to Friday",
     "time": "9:00 am to 4:30 pm",
@@ -42,7 +42,7 @@ var json = [
     "desc": "Provides personal and general tax information from the automated Tax Information Phone Service (TIPS). Offers several different services depending on the time of year: * Telerefund * GST/HST credit * Canada Child Tax Benefit (CCTB) * Universal Child Care Benefit (UCCB) * Registered Retirement Savings Plan (RRSP) * Business Information * Tax Free Savings Account (TFSA"
   }
 ];
-
+var marker, match, longtitude, latitude;
 function initialize() {
   var mapOptions = {
     zoom: 12
@@ -93,7 +93,7 @@ function handleNoGeolocation(errorFlag) {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 setTimeout(function () {
-  var marker, match, longtitude, latitude;
+  
 
   for (var x = 0; x < json.length; x++) {
     $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=' + json[x].location + '&sensor=false', null, function (data) {
@@ -107,35 +107,28 @@ setTimeout(function () {
         latitude = this.position.lat();
         longitude = this.position.lng();
         console.log(latitude + ", " + longitude);
+        
         for (var i = 0; i < json.length; i++) {
-          if (json[i].lat == latitude && json[i].long == longitude) {
-            match = json[i];
-          }
-          console.log(match);
-        }
+      //console.log(json[i].title);
+      //console.log(json[i]);
+            var temp = 0;
+    if (json[i].lat == latitude && json[i].long == longitude) {
+      //match = json[i];
+        temp = i;
+        console.log(json[i]);
+    }
+    
+    }
+
+  $('.map .head h1').text(json[temp].title);
+  $('.map .head .loc').text(json[temp].location);
+  $('.map .head .date').text(json[temp].date);
+
+  $('.map .details h1').text("Details.");
+  $('.map .details .desc').text(json[temp].desc);
       });
     });
   };
 }, 2000);
 
 
-
-
-
-
-
-var update = function () {
-  for (var i = 0; i < json.length; i++) {
-    if (json[i].lat == latitude && json[i].long == longitude) {
-      match = json[i];
-    }
-    console.log(match);
-  }
-
-  $('.map .head h1').text(match.title);
-  $('.map .head .loc').text(match.location);
-  $('.map .head .date').text(match.date);
-
-  $('.map .details h1').text("Details.");
-  $('.map .details .desc').text(match.desc);
-}
