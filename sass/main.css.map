@@ -11,6 +11,7 @@
     "2-modules/_section.sass",
     "3-sections/_hero.sass",
     "3-sections/_about.sass",
+    "3-sections/_footer.sass",
     "0-tools/bourbon/settings/_prefixer.scss",
     "0-tools/bourbon/settings/_px-to-em.scss",
     "0-tools/bourbon/settings/_asset-pipeline.scss",
