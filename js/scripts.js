@@ -15,23 +15,23 @@ scroll = function () {
 
 var data = [
   {
-    "id":"01",
-    "title":"This is an event",
-    "long":"1234",
-    "lat":"0987",
-    "location":"McMaster Rd."
-    "date":"Thursday, January 33rd, 2096"
-    "time":"6:00 PM"
-    "desc":"This is a description"
+    "id": "01",
+    "title": "Resume/Cover Letter Workshop",
+    "long": "43.341118",
+    "lat": "-79.883503",
+    "location": "YMCA Employment Services 427 Dundas Street East, Unit 1 Waterdown, ON L0R 2H1",
+    "date": "10/16/2014",
+    "time": "11:40 AM",
+    "desc": "Need help with your resume and cover letter? Learn how to make an effective resume and cover letter by attending this workshop! Please call 905-690-9927 to register.",
   },
   {
-    "id":"02",
-    "title":"This is an event",
-    "long":"1234",
-    "lat":"0987",
-    "location":"McMaster Rd."
-    "date":"Thursday, January 33rd, 2096"
-    "time":"6:00 PM"
-    "desc":"This is a description"
+    "id": "02",
+    "title": "Interview Skills Workshop",
+    "long": "43.341118",
+    "lat": "-79.883503",
+    "location": "YMCA Employment Services 427 Dundas Street East, Unit 1 Waterdown, ON L0R 2H1",
+    "date": "12/10/2014",
+    "time": "11:50 AM",
+    "desc": "Learn how to prepare effectively for an interview to get the job that you want! Please call The YMCA Employment Services at 905-690-9927 to register.",
   },
 ]
