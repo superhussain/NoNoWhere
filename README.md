@@ -1,6 +1,8 @@
 # [NoNoHacks](http://nonowhere.com)
+
 ***A DeltaHacks II Project***
-Created by Hussain Abbas, Neil Sun, Art Tsai & Vincent Teng.
+
+Created by [Hussain Abbas](https://github.com/superhussain), [Neil Sun](https://github.com/CoderNeil), [Art Tsai](https://github.com/artyboy123) & [Vincent Teng](https://github.com/vincentt117).
 
 ----------
 
