@@ -1,28 +1,47 @@
-# deltahacks
-DeltaHacks 2 Project
+# [NoNoHacks](http://nonowhere.com)
+###*A DeltaHacks II Project*
+Created by Hussain Abbas, Neil Sun, Art Tsai & Vincent Teng.
 
-url link: http://nonowhere.com/
+----------
 
-Created by Hussain Abbas, Neil Sun, Art Tsai & Vincent Teng
+##About the Project
 
-This project was made at a hackathon in Mcmaster University known as deltahacks II 2016. 
+This project was made at DeltaHacks II over the span of 24 hours, which was proudly hosted by McMaster University.
 
-It was a 24 hour long project! 
+The idea for this project was to connect less fortunate people with **FREE** events and resources close to them. We decided to call it **[NoNoWhere](http://nonowhere.com)** because it helps people find a direction.
 
-The point of this project was to connect the homesless people in southern Ontario region to find out free local resources in nearby locations. 
+    "I don't have anywhere to go."
 
-Free resouces such as 
+becomes...
 
-=> soup kitchen
+    "I don't not have somewhere to go."
 
-=> salvation army
+Double negative... Not Nowhere... You're smart, you get it!
 
-=> local health centers
+The types of resources and events we will have on our platform includes:
 
-=> government funded employment centers
+ - Soup Kitchens
+ - Local Health Centers
+ - Government Funded Employment Centers
+ - Training Workshops & Seminars
+ - And much, much more!
 
-The project was made with HTML, CSS, JQuary and Google geolocation API
+----------
 
-Other technical skills involved were logo design from scratch and use Gulp from node.js to compile
+##Technologies Used
 
-Compiled the code: SASS, Bracket
+This project was made possible using these beautiful technologies:
+
+ - HTML
+ - SASS
+ - JavaScript
+ - jQuery
+ - Gulp
+ - Node Package Manager
+ - Google Maps API
+ - Bourbon
+ - Brackets
+ - Adobe Photoshop
+ - Adobe Illustrator
+ - and last, but definitely not least, good ol' pen and paper!
+
