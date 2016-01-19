@@ -1,10 +1,10 @@
 # [NoNoHacks](http://nonowhere.com)
-###*A DeltaHacks II Project*
+***A DeltaHacks II Project***
 Created by Hussain Abbas, Neil Sun, Art Tsai & Vincent Teng.
 
 ----------
 
-##About the Project
+###About the Project
 
 This project was made at DeltaHacks II over the span of 24 hours, which was proudly hosted by McMaster University.
 
@@ -28,7 +28,7 @@ The types of resources and events we will have on our platform includes:
 
 ----------
 
-##Technologies Used
+###Technologies Used
 
 This project was made possible using these beautiful technologies:
 
