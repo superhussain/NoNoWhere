@@ -42,10 +42,11 @@ var json = [
     "desc": "Provides personal and general tax information from the automated Tax Information Phone Service (TIPS). Offers several different services depending on the time of year: * Telerefund * GST/HST credit * Canada Child Tax Benefit (CCTB) * Universal Child Care Benefit (UCCB) * Registered Retirement Savings Plan (RRSP) * Business Information * Tax Free Savings Account (TFSA"
   }
 ];
-var marker, match, longtitude, latitude;
+var marker, match, longitude, latitude;
+
 function initialize() {
   var mapOptions = {
-    zoom: 12
+    zoom: 8
   };
   map = new google.maps.Map(document.getElementById('map'),
     mapOptions);
@@ -93,7 +94,7 @@ function handleNoGeolocation(errorFlag) {
 google.maps.event.addDomListener(window, 'load', initialize);
 
 setTimeout(function () {
-  
+
 
   for (var x = 0; x < json.length; x++) {
     $.getJSON('http://maps.googleapis.com/maps/api/geocode/json?address=' + json[x].location + '&sensor=false', null, function (data) {
@@ -104,31 +105,36 @@ setTimeout(function () {
         map: map
       });
       marker.addListener("click", function (e) {
-        latitude = this.position.lat();
-        longitude = this.position.lng();
-        console.log(latitude + ", " + longitude);
-        
+        latitude = this.position.lat().toString();
+        latitude = latitude.slice(0, (latitude.indexOf(".")) + 3);
+
+        longitude = this.position.lng().toString();
+        longitude = longitude.slice(0, (longitude.indexOf(".")) + 3);
+
+        console.log(latitude + ', ' + longitude);
+
         for (var i = 0; i < json.length; i++) {
-      //console.log(json[i].title);
-      //console.log(json[i]);
-            var temp = 0;
-    if (json[i].lat == latitude && json[i].long == longitude) {
-      //match = json[i];
-        temp = i;
-        console.log(json[i]);
-    }
-    
-    }
+          console.log(json[i].title);
+          //console.log(json[i]);
+          //var temp = 0;
+          var jsonLat = json[i].long;
+          var jsonLng = json[i].lat;
+          var jsonObj = json[i];
+          console.log(jsonLat + ', ' + jsonLng);
+          if (jsonLat.indexOf(latitude) > -1 && jsonLng.indexOf(longitude) > -1) {
+            //match = json[i];
+            //temp = i;
+            //console.log('hi');
+            console.log(jsonObj);
+            $('.map .head h1').text(json[i].title);
+            $('.map .head .loc').text(json[i].location);
+            $('.map .head .date').text(json[i].date);
+            $('.map .details h1').text("Details.");
+            $('.map .details .desc').text(json[i].desc);
+          }
 
-  $('.map .head h1').text(json[temp].title);
-  $('.map .head .loc').text(json[temp].location);
-  $('.map .head .date').text(json[temp].date);
-
-  $('.map .details h1').text("Details.");
-  $('.map .details .desc').text(json[temp].desc);
+        }
       });
     });
   };
 }, 2000);
-
-
