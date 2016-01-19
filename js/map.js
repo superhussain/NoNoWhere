@@ -126,6 +126,9 @@ setTimeout(function () {
             //temp = i;
             //console.log('hi');
             console.log(jsonObj);
+            $('.map .details').css({'display': 'block'});
+            $('.map .head').css({'height': 'auto'});
+            $('.map #map').css({'height': '50vh'});
             $('.map .head h1').text(json[i].title);
             $('.map .head .loc').text(json[i].location);
             $('.map .head .date').text(json[i].date);
