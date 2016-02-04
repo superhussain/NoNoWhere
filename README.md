@@ -1,4 +1,4 @@
-# [NoNoHacks](http://nonowhere.com)
+# [NoNoWhere](http://nonowhere.com)
 
 ***A DeltaHacks II Project***
 
